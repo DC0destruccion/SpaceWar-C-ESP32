@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">ESP32-WROOM-32U y potenciómetro de 10 kiloohmios</title>
+  <desc id="desc">Placa ESP32 clásica con CP2102 y micro-USB. Los extremos se conectan a 3V3 y GND. El cursor central se conecta a GPIO34, ADC1 canal 6. Nunca usar 5 voltios. La posición de las cabeceras es conceptual.</desc>
+  <rect width="1100" height="620" rx="24" fill="#10192b"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="50" y="65" font-size="29" font-weight="700" fill="#f5f8ff">Un mando. Tres conexiones.</text>
+    <text x="50" y="97" font-size="17" fill="#aabbd3">ESP32-WROOM-32U + potenciómetro lineal B10K · esquema conceptual</text>
+    <rect x="65" y="155" width="325" height="320" rx="20" fill="#1b3040" stroke="#66808e" stroke-width="2"/>
+    <rect x="107" y="215" width="221" height="113" rx="10" fill="#5d6f7e"/>
+    <text x="217" y="251" text-anchor="middle" fill="white" font-size="18" font-weight="700">ESP32-WROOM-32U</text>
+    <text x="217" y="281" text-anchor="middle" fill="#e0e7ef" font-size="16">38 pines · CP2102</text>
+    <rect x="172" y="435" width="88" height="48" rx="8" fill="#c3ccd8"/>
+    <rect x="185" y="449" width="62" height="13" rx="6" fill="#152233"/>
+    <path d="M216 483 V540 H73" stroke="#bac8d9" stroke-width="9" fill="none"/>
+    <text x="55" y="576" font-size="17" fill="#aabbd3">Micro-USB de datos al PC</text>
+    <g fill="#f5f8ff" font-size="19" font-weight="600">
+      <text x="285" y="195">3V3</text>
+      <text x="269" y="365">GPIO34</text>
+      <text x="295" y="429">GND</text>
+    </g>
+    <g stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M377 191 H722 V386 H820 V366" stroke="#ff7979"/>
+      <path d="M377 360 H646 V445 H873 V366" stroke="#5ce2c3"/>
+      <path d="M377 424 H534 V493 H926 V366" stroke="#8da7dd"/>
+    </g>
+    <g fill="#ff7979"><circle cx="377" cy="191" r="8"/><circle cx="820" cy="366" r="7"/></g>
+    <g fill="#5ce2c3"><circle cx="377" cy="360" r="8"/><circle cx="873" cy="366" r="7"/></g>
+    <g fill="#8da7dd"><circle cx="377" cy="424" r="8"/><circle cx="926" cy="366" r="7"/></g>
+    <circle cx="873" cy="282" r="88" fill="#24354a" stroke="#a2b2c5" stroke-width="3"/>
+    <circle cx="873" cy="282" r="62" fill="#425369"/>
+    <path d="M873 282 L903 242" stroke="#f5f8ff" stroke-width="8" stroke-linecap="round"/>
+    <rect x="807" y="324" width="25" height="46" rx="4" fill="#ff7979"/>
+    <rect x="860" y="324" width="25" height="46" rx="4" fill="#5ce2c3"/>
+    <rect x="913" y="324" width="25" height="46" rx="4" fill="#8da7dd"/>
+    <text x="873" y="163" text-anchor="middle" fill="#f5f8ff" font-size="22" font-weight="700">Potenciómetro 10 kΩ</text>
+    <text x="671" y="429" fill="#5ce2c3" font-size="16">Cursor central</text>
+    <text x="435" y="337" fill="#5ce2c3" font-size="16">GPIO34 = ADC1_CH6</text>
+    <rect x="440" y="542" width="594" height="44" rx="9" fill="#4b2937"/>
+    <text x="737" y="570" text-anchor="middle" fill="#ffccd3" font-size="18" font-weight="700">Alimenta el potenciómetro desde 3V3. Nunca desde 5 V.</text>
+  </g>
+</svg>

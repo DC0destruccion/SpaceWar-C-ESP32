@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- Windows Forms requiere Windows. WinExe evita abrir una consola al iniciar el juego. -->
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>NebulaInvaders</AssemblyName>
+    <RootNamespace>NebulaInvaders.Desktop</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- El puerto USB del ESP32 se lee como puerto serie mediante esta biblioteca. -->
+    <PackageReference Include="System.IO.Ports" Version="10.0.12" />
+    <!-- Separar motor y datos permite probarlos sin abrir la ventana. -->
+    <ProjectReference Include="../NebulaInvaders.Core/NebulaInvaders.Core.csproj" />
+    <ProjectReference Include="../NebulaInvaders.Data/NebulaInvaders.Data.csproj" />
+    <!-- El JSON se deja junto al EXE para ajustar SQL y calibración sin recompilar. -->
+    <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
